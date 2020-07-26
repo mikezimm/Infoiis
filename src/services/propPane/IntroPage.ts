@@ -72,7 +72,7 @@ import { IInfoIisWebPartProps } from '../../webparts/infoIis/InfoIisWebPart';
     */
 
 export class IntroPage {
-  public getPropertyPanePage(webPartProps: IInfoIisProps, _onClickCreateTime, _onClickCreateProject, _onClickUpdateTitles ): IPropertyPanePage {
+  public getPropertyPanePage(webPartProps: IInfoIisWebPartProps, _onClickCreateTime, _onClickCreateProject, _onClickUpdateTitles ): IPropertyPanePage {
     return <IPropertyPanePage>
     { // <page1>
       header: {

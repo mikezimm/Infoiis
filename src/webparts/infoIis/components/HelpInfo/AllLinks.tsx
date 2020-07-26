@@ -59,6 +59,13 @@ export const gitTMTActivityTypeWiki = createLink( baseMyRepos + 'TrackMyTime7/wi
 export const gitTMTActivityURLWiki = createLink( baseMyRepos + 'TrackMyTime7/wiki/ActivityURL%5E-calculated-column-example' , '_blank', 'ActivityURL^ Formula examples' );
 export const gitTMTOptionsWiki = createLink( baseMyRepos + 'TrackMyTime7/wiki/Options%5E-calculated-column-example' , '_blank', 'Options^ Formula examples' );
 
+
+/**
+ * Info-iis links
+ */
+
+
+
 /**
  *  Github Samples
  */
