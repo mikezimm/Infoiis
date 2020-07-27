@@ -118,22 +118,17 @@ public constructor(props:IInfoAboutMeProps){
 
             thisPage = <div>
                 <WebPartLinks
-                    projectListURL={ this.props.parentState.projectListURL }
-                    projectListName={ this.props.parentState.projectListName }
-                    timeTrackerListURL={ this.props.parentState.timeTrackerListURL }
-                    timeTrackListName={ this.props.parentState.timeTrackListName }
+                    parentListURL={ this.props.parentState.parentListURL }
+                    parentListName={ this.props.parentState.parentListName }
+                    childListURL={ this.props.parentState.childListURL }
+                    childListName={ this.props.parentState.childListName }
                 ></WebPartLinks>
 
                 <h2>Version History</h2>
                 {/* 3 files to update version number:  package-solution.json, package-lock.json, package.json*/}
                 <table className={styles.infoTable}>
                     <tr><th>Date</th><th>Version</th><th>Focus</th><th>Notes</th></tr>
-                    <tr><td>2020-06-17</td><td>{'1.0.0.15'}</td><td>Project Edit</td><td>Add Project Edit screen, Project quick actions, requires 2 ne Project List columns.</td></tr>
-                    <tr><td>2020-04-01</td><td>{'1.0.0.11'}</td><td>Activity URL</td><td>Add Activity URL based on Project Task.  ActivityType, Activity, ActivityURL^</td></tr>
-                    <tr><td>2020-03-18</td><td>{'1.0.0.10'}</td><td>Charts</td><td>Add Core Time, Revise Story charts, Add Chapter charts, Search to chart data.</td></tr>
-                    <tr><td>2020-03-11</td><td>{'1.0.0.9'}</td><td>Charts</td><td>Fix user summary Hours, Add Last Entry.  Fix Time display error.</td></tr>
-                    <tr><td></td><td>{'1.0.0.8'}</td><td>Charts</td><td>Add Story and User filters.  Add Details toggle.  Add About and Numbers page.</td></tr>
-                    <tr><td></td><td>{'1.0.0.7'}</td><td>Charts/Help</td><td>Initial addition of Charts and Help</td></tr>
+                    <tr><td>2020-07-27</td><td>{'1.0.0.0'}</td><td>Intial Build</td><td>Nothing special</td></tr>
                 </table>
             </div>;
 

@@ -166,37 +166,6 @@ public constructor(props:IInfoPageProps){
                 ></About>;
             }
 
-/*
-            https://www.freecodecamp.org/news/a-complete-beginners-guide-to-react-router-include-router-hooks/
-            const Contact = () => (
-                <Fragment>
-                <h1>Contact</h1>
-                <FakeText />
-                </Fragment>
-                );
-*/
-
-            /*
-            else if ( this.state.selectedChoice === 'advanced' ) {
-                thisPage = <FuturePlans 
-                    parentProps={  this.props.parentProps }
-                    parentState={  this.props.parentState }
-                    allLoaded={ this.props.allLoaded }
-                    showInfo={ this.props.showInfo }
-                ></FuturePlans>;
-            } else if ( this.state.selectedChoice === 'errors' ) {
-                thisPage = <FuturePlans 
-                    parentProps={  this.props.parentProps }
-                    parentState={  this.props.parentState }
-                    allLoaded={ this.props.allLoaded }
-                    showInfo={ this.props.showInfo }
-                ></FuturePlans>;
-
-            }
-            */
-
-            //toggleDebug
-
             const stackButtonTokensBody: IStackTokens = { childrenGap: 40 };
 
             let toggleDebug = <Toggle label="" 

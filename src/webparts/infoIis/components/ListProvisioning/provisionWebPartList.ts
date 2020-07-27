@@ -14,13 +14,13 @@ import { IFieldLog, addTheseFields } from '../../../../services/listServices/col
 
 import { IViewLog, addTheseViews } from '../../../../services/listServices/viewServices'; //Import view arrays for Time list
 
-import { TMTProjectFields, TMTTimeFields} from './columnsTMT'; //Import column arrays (one file because both lists use many of same columns)
+import { TMTProjectFields, TMTTimeFields} from './columnsWebPart'; //Import column arrays (one file because both lists use many of same columns)
 
-import { projectViews} from './viewsTMTProject';  //Import view arrays for Project list
+import { projectViews} from './viewsParentList';  //Import view arrays for Project list
 
-import { timeViewsFull } from './viewsTMTTime'; //Import view arrays for Time list
+import { timeViewsFull } from './viewsChildList'; //Import view arrays for Time list
 
-import { TMTDefaultProjectItems, TMTTestTimeItems, IAnyArray } from './ItemsTMT'; // Import items to create in the list
+import { TMTDefaultProjectItems, TMTTestTimeItems, IAnyArray } from './ItemsWebPart'; // Import items to create in the list
 
 export async function provisionTheList( listName : string, listDefinition: 'Projects' | 'TrackMyTime' , webURL: string ): Promise<IServiceLog[]>{
 

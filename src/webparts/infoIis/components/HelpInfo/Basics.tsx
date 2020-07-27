@@ -114,40 +114,27 @@ public constructor(props:IBasicsProps){
             thisPage =     <div className={styles.infoPane}>
 
             <h3>Please submit any issues or suggestions on github (requires free account)</h3>
-            { links.gitRepoTrackMyTime.issues }
+            { links.gitRepoInfoIis.issues }
         
-            <h2>Creating Projects in TrackMyTime, how they work</h2>
+            <h2>Creating Projects in InfoIis, how they work</h2>
               <p>Projects can be created and used in any way you want.  This guide just explains some of the special features of different columns, and how the webpart uses them to your advantage.</p>
             <h3>SPECIAL Columns:  These have special uses and may overlap depending on how you use them.</h3>
-              <p><b>Story and Chapter have special use for charts.</b>  These may look like a duplicate of Project and Category but there is a method to the madness.  
-              Category and Project ID are intended to be visible and editible when entering a time.  
-              In addition, The Activity column can auto-populate Category and ProjectID columns based on the URL which may make 
-              those columns different TypE CaSe making inconsistant chart labels.  
-              Story and Chapter are only visible/editable on the Project list and therefore will provide more consistancy.  
-              So the moral of the story... Think of Story and Chapter columns as a way to tell a Story through built in charts.  Story is the book, Chapter can be the buckets you break your time into.  
-              Again these may be duplicates of Category or Project depending on how you use them which is ok.  They just provide a way to keep the chart labels exactly as you want.</p>
+
               <ul>
-                <li><span className={styles.iColNamV}>Category1/2:</span>Are designed for generic labels that can span multiple projects.  An example would be "Create Specification" which may be a phase in many projects.  This field will have some charts tailored to this use case.</li>
-                <li><span className={styles.iColNamV}>ProjectID1/2:</span>Has multiple use cases.  You can use it for a Project Number like a category.  But it's special purpose is for specific "transaction" type detail.  For instance, the Drawing Number, Specification that you are working on for that time entry.</li>
-                <li><span className={styles.iColNamV}>Activity (Time list):</span>Has special functionality.  If you paste a link in this column, it can autopopulate Project, Category and Comments columns for you.</li>
-                <li><span className={styles.iColNamH}>Story:</span>Not required for all Projects, but can be used to tell a "Story" of how your time was spent on a specific project.</li>
-                <li><span className={styles.iColNamH}>Chapter:</span>Not required for all Projects, but can be used to bucket your time on a "Story" in charts.</li>
+                <li><span className={styles.iColNamV}>TBD Col:</span>TBD More Info.</li>
               </ul>
               
             <h3>GENERAL Columns:  These help identify/filter projects in the webpart.</h3>
               <ul>
                 <li><span className={styles.iColNam}>Title:</span>This is the text visible in the webpart.  Must be unique per item in Project List.</li>
                 <li><span className={styles.iColNam}>Active:</span>If Active=No, project will automatically be moved to "InActive" heading.</li>
-                <li><span className={styles.iColNam}>Everyone:</span>If Everyone=Yes, project will only be found in Everyone heading. Use this for generic tasks like "Training", "Emails", "Break".</li>
                 <li><span className={styles.iColNam}>Leader:</span>Only one leader is allowed per project item.  These projects can be found in "Yours" heading.</li>
                 <li><span className={styles.iColNam}>Team:</span>Multiple people are allowed in this column.  If your name is in this column, the project will under "Your Team" heading.</li>
-                <li><span className={styles.iColNam}>Comments:</span>The world is your canvas, just use it.</li>
               </ul>
         
             <h3>FUTURE Plans - See that page for more details</h3>
               <ul>
-                <li><span className={styles.iColNam}>Using Project list like a Task list:</span>See Future Plans for more details</li>
-                <li><span className={styles.iColNam}>CC (Carbon Copy) Time Entries</span>See Future Plans for more details</li>
+                <li><span className={styles.iColNam}>TBD More Info:</span>TBD More Details</li>
               </ul>
 
         

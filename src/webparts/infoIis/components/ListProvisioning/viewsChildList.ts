@@ -23,16 +23,16 @@ import { ootbID, ootbVersion, ootbTitle, ootbEditor, ootbAuthor, ootbCreated, oo
 
 //SHARED Columns
 import {Leader, Team, Category1, Category2, ProjectID1, ProjectID2, Story, Chapter, StatusTMT, StatusNumber, StatusText,
-    DueDateTMT, CompletedDateTMT, CompletedByTMT, CCList, CCEmail} from './columnsTMT';
+    DueDateTMT, CompletedDateTMT, CompletedByTMT, CCList, CCEmail} from './columnsWebPart';
 
 //PROJECT columns
 import { SortOrder, Everyone, Active, ActivityType, ActivityTMT, ActivtyURLCalc, OptionsTMT, OptionsTMTCalc,
     EffectiveStatus, IsOpen,
-	ProjectEditOptions, HistoryTMT, TimeTarget} from './columnsTMT';
+	ProjectEditOptions, HistoryTMT, TimeTarget} from './columnsWebPart';
 
 //TIME columns
 import { Activity, DeltaT, Comments, User, StartTime, EndTime, OriginalStart, OriginalEnd, OriginalHours, MinutesChanged,
-    Hours, Days, Minutes, KeyChanges, SourceProject, SourceProjectRef, Settings, Location, EntryType } from './columnsTMT';
+    Hours, Days, Minutes, KeyChanges, SourceProject, SourceProjectRef, Settings, Location, EntryType } from './columnsWebPart';
 
 	
 import { testAlertsView, createRecentUpdatesView } from '../../../../services/listServices/viewsGeneric';

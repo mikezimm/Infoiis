@@ -113,21 +113,17 @@ public constructor(props:IFuturePlansProps){
             thisPage =     <div className={styles.infoPane}>
 
             <h3>Please submit any issues or suggestions on github (requires free account)</h3>
-              { links.gitRepoTrackMyTime.issues }
+              { links.gitRepoInfoIis.issues }
                         
             <h3>FUTURE Use columns (Projects as Tasks):  These may be used in the future for advanced functionality.</h3>
               <ul>
-                <li><span className={styles.iColNamU}>Status:</span>Project column to be used as alternative to 'Active' column.</li>
-                <li><span className={styles.iColNamU}>Due Date:</span>Date Project/Task is due.</li>
-                <li><span className={styles.iColNamU}>Completed:</span>Date Project/Task was completed.</li>
-                <li><span className={styles.iColNamU}>Completed By:</span>Person who completed Project/Task.</li>
+                <li><span className={styles.iColNamU}>TBD Column:</span>TBD Column Info.</li>
+
               </ul>
         
             <h3>FUTURE Use columns:  These may be used in the future for advanced functionality.</h3>
               <ul>
-                <li><span className={styles.iColNamU}>TimeTarget:</span>To be used in the future for charting time against a target.</li>
-                <li><span className={styles.iColNamU}>CCList:</span>Intent is to have webpart be able to copy time entry to an additional list based on selected project.  This way you could have all your items in one place, but also "report" the same entry to another list at the same time.</li>
-                <li><span className={styles.iColNamU}>CCEmail:</span>Intent is to have ability to send an email when creating item with a project that has a CCEmail.</li>
+                <li><span className={styles.iColNamU}>TBD Column:</span>TBD Column Info.</li>
               </ul>
         
           </div>;

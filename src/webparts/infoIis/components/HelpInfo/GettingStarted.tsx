@@ -44,7 +44,7 @@ export default class GettingStarted extends React.Component<IGettingStartedProps
 public constructor(props:IGettingStartedProps){
     super(props);
     this.state = { 
-        selectedChoice: 'projectList',
+        selectedChoice: 'parentList',
         lastChoice: '',
 
     };
@@ -117,47 +117,31 @@ public constructor(props:IGettingStartedProps){
 
             <h3>Please submit any issues or suggestions on github (requires free account)</h3>
             <WebPartLinks
-                    projectListURL={ this.props.parentState.projectListURL }
-                    projectListName={ this.props.parentState.projectListName }
-                    timeTrackerListURL={ this.props.parentState.timeTrackerListURL }
-                    timeTrackListName={ this.props.parentState.timeTrackListName }
+                    parentListURL={ this.props.parentState.parentListURL }
+                    parentListName={ this.props.parentState.parentListName }
+                    childListURL={ this.props.parentState.childListURL }
+                    childListName={ this.props.parentState.childListName }
             ></WebPartLinks>
 
-            <h2><mark>Before you start:</mark>  Set your time zone in Office 365 Personal settings</h2>
-            
-            Go to { links.blogSPTimeZone } and scroll down to Personal Setting Option 2, set your personal regional time zone:<br/>
-
-            If you do not do this first, your times will be saved in the site's local time zone and will cause the webpart not to work properly.<br/>
-            NOTE:  This will also insure that wherever you go in SharePoint, things will be converted to your local time :).
-
-            <h2>First:  Create a Project List and TrackMyTime List in your site</h2>
+            <h2>First:  Create a Parent List and Child List in your site</h2>
                 <ol>
                     <li>Go to <b>WebPart Properties</b> - Edit Page, Edit Webpart.</li>
                     <li>Expand <b>Create-Verify Lists</b> section.</li>
                     <li>Press <b>Create-Verify Projects List</b> button.</li>
-                    <li>Press <b>Create-Verify TrackMyTime List</b> button.</li>
+                    <li>Press <b>Create-Verify Child List</b> button.</li>
                     <li>Exit <b>WebPart Properties</b></li>
                     <li><b>Save</b> this page.</li>
                     <li><b>Refresh</b> this page.</li>
                 </ol>
 
-            <h2>Second:  Create some Projects in the Projects list</h2>
+            <h2>Second:  Create some Parents in the Parents list</h2>
                 <ol>
-                    <li>Go to <b>Project List</b> section in this guide and review what the columns do.</li>
-                    <li>Go to your <Link href={this.props.parentState.projectListURL} target='_blank'>{ this.props.parentProps.projectListTitle }
-                        </Link> and create some new Projects.
+                    <li>Go to <b>Parent List</b> section in this guide and review what the columns do.</li>
+                    <li>Go to your <Link href={this.props.parentState.parentListURL} target='_blank'>{ this.props.parentProps.parentListTitle }
+                        </Link> and create some new Parents.
                     </li>
                 </ol>
 
-            <h2>Third:  Start Tracking your Time!</h2>
-                <ol>
-                    <li><b>Refresh</b> this page.</li>
-                    <li>Select a <b>Project</b> from the list on the left side.  If you do not see any, click the tabs in upper left to find one</li>
-                    <li>Select a <b>Time Entry Mode</b> in upper right</li>
-                    <li><b>Fill in any details</b> you want to save.</li>
-                    <li>Press <b>Save Item</b> button.</li>
-                    <li>{ links.createLink(this.props.parentState.timeTrackerListURL,'_blank', this.props.parentState.timeTrackListName + ' list' ) }</li>
-                </ol>
           </div>;
 
 
