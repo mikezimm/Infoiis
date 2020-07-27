@@ -13,6 +13,18 @@ import { IInfoIisProps } from './components/IInfoIisProps';
 
 export interface IInfoIisWebPartProps {
   description: string;
+
+  // 2 - Source and destination list information
+  createVerifyLists: boolean;
+  parentListTitle: string;
+  parentListWeb: string;
+  parentListConfirmed: boolean;
+
+  childListTitle: string;
+  childListWeb: string;
+  childListConfirmed: boolean;
+  parentListFieldTitles: string;
+
 }
 
 export default class InfoIisWebPart extends BaseClientSideWebPart <IInfoIisWebPartProps> {
