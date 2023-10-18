@@ -262,6 +262,7 @@ export const StatusText : ICalculatedField = {
  *                                                                                                      
  */
 
+ const part = 'alv';
 
 
 export const SortOrder : INumberField = {
@@ -330,7 +331,7 @@ export const ActivityTMT : ITextField = {
 export const ActivtyURLCalc : ICalculatedField = {
     fieldType: cCalcN,
     name: 'ActivtyURLCalc',
-    formula: '=IF(ActivityType="Build","https://plm. ..... /enovia/common/emxNavigator.jsp?type=GEOBuildOrder&name=[Activity]&rev=-&return=specific",IF(ActivityType="Ship","https://alvweb.alv.autoliv.int/PRISM/SalesOrder_List.aspx?Order=[Activity]",IF(ActivityType="TMT Issue","https://github.com/mikezimm/infoIis/issues/[Activity]",IF(ActivityType="Socialiis Issue","https://github.com/mikezimm/Social-iis-7/issues/[Activity]",IF(ActivityType="Pivot Tiles Issue","https://github.com/mikezimm/Pivot-Tiles/issues/[Activity]","")))))',
+    formula: `=IF(ActivityType="Build","https://plm. ..... /enovia/common/emxNavigator.jsp?type=GEOBuildOrder&name=[Activity]&rev=-&return=specific",IF(ActivityType="Ship","https://${part}web.${part}.${window.location.hostname}.int/PRISM/SalesOrder_List.aspx?Order=[Activity]",IF(ActivityType="TMT Issue","https://github.com/mikezimm/infoIis/issues/[Activity]",IF(ActivityType="Socialiis Issue","https://github.com/mikezimm/Social-iis-7/issues/[Activity]",IF(ActivityType="Pivot Tiles Issue","https://github.com/mikezimm/Pivot-Tiles/issues/[Activity]","")))))`,
     dateFormat: DateTimeFieldFormatType.DateOnly,
     onCreateProps: {
         Group: thisColumnGroup,
